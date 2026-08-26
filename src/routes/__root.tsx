@@ -9,8 +9,13 @@ import {
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
 
+import { ConciergeProvider } from "../components/concierge/concierge-context";
+import { ConciergeWidget } from "../components/concierge/concierge-widget";
+import { SiteLayout } from "../components/site/layout";
+import { Toaster } from "../components/ui/sonner";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+
 
 function NotFoundComponent() {
   return (
